@@ -2,7 +2,7 @@
 # tasks file for mysql
 
 - name: Create mysql database
-  community.mysql.mysql_db module:
+  community.mysql.mysql_db:
     name: '{{ wp_mysql_db }}'
     state: present
   become: yes

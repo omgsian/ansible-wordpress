@@ -1,0 +1,7 @@
+- hosts: webservers
+  roles:
+    - server
+    - mysql
+    - php
+    - wordpress
+  become: true
